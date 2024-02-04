@@ -15,7 +15,7 @@ export default defineNitroPlugin((nitro) => {
             if (!(contentType) || !contentType.startsWith('text/html'))
                 return
 
-
+            console.log(event)
             await useCompression(event, response)
     })
 })
