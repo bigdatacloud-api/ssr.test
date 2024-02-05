@@ -6,5 +6,8 @@ export default defineNuxtConfig({
 			crawlLinks: false,
 		},
 	},
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+  routeRules: {
+		'/':{prerender:true},
+	},
 })
